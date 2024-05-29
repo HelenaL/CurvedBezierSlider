@@ -4,9 +4,11 @@
 UI control of the custom slider view with a curved path.
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/HelenaL/CurvedBezierSlider/assets/5014495/530967d8-dc6b-4d5d-894d-a3ddeaebec2b" width="28%" alt="example 1" style="margin-right: 200px;"/>
+  <img src="https://github.com/HelenaL/CurvedBezierSlider/assets/5014495/530967d8-dc6b-4d5d-894d-a3ddeaebec2b" width="28%" alt="example 1" style="margin-right: 100px;"/>
   <img src="https://github.com/HelenaL/CurvedBezierSlider/assets/5014495/79bf9adb-d83f-473f-936e-d51f3e24d23e" width="28%" alt="example 2" style="margin-right: 100px;"/>
+  <img src="https://github.com/HelenaL/CurvedBezierSlider/assets/5014495/d7d47583-8eac-4bf0-8dd3-77ce32a1e93c" width="28%" alt="example 3" style="margin-right: 100px;"/>
 </div>
+
 
 # Project Details
 Being inherited from `UIControl`, CurvedBezierSlider provides the behavior of default UIKit interface components, but at the same time, it has a sophisticated curved design based on `UIBezierPath`.
