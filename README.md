@@ -9,14 +9,59 @@ UI control of the custom slider view with a curved path.
   <img src="https://github.com/HelenaL/CurvedBezierSlider/assets/5014495/d7d47583-8eac-4bf0-8dd3-77ce32a1e93c" width="28%" alt="example 3" style="margin-right: 100px;"/>
 </div>
 
-
 # Project Details
 Being inherited from `UIControl`, CurvedBezierSlider provides the behavior of default UIKit interface components, but at the same time, it has a sophisticated curved design based on `UIBezierPath`.
 
+## Requirements
+- iOS 15.0+
+- Swift 5.0+
+
+## Installation
+### Swift Package Manager
+```swift
+dependencies: [
+    .package(url: "https://github.com/HelenaL/CurvedBezierSlider", from: "1.0.0")
+]
+```
+## Initialization
+First, import the package to a project.
+```swift
+import CurvedBezierSlider
+```
 ## Usage
+* CurvedBezierSlider might be initialized in Interface Builder. Drag and drop `UIView` and change the class of the view to CurvedBezierSlider(fig. 1). Then set the required properties of the slider (fig. 2). 
+![use_example](https://github.com/HelenaL/CurvedBezierSlider/assets/5014495/8f82c760-b81c-4423-8a25-36c3a5ab9646)
 
+* For initializing programmatically:
+  ```swift
+  let slider = CurvedBezierSlider()
+  ```
+  And then customize it:
+  ```swift
+  slider.value = 3.0
+  slider.minimumValue = 0.0
+  slider.maximumValue = 10.0
+  slider.scaleIsHidden = true
+  slider.strokeMinColor = .blue
+  slider.strokeMaxColor = .gray
+  ```
+  For adding action to the slider:
+  ```swift
+  ...
+  
+  slider.addTarget(self, action: #selector(valueChangeAction), for: .valueChanged)
+  
+  }
+  
+  @objc func valueChangeAction(sender: CurvedBezierSlider!) {
+   
+    //your code here
+     
+  }
+  ```
+
+## Configuration
 ### Slider properties
-
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
 | value | Double | `0.0` | Current value of a slider. This value will be pinned to min/max. |
@@ -38,4 +83,7 @@ Being inherited from `UIControl`, CurvedBezierSlider provides the behavior of de
 | ------------ | ------- | ------- | ----------- |
 | scaleIsHidden | Bool | `false` | A Boolean value that determines whether scale should be hidden. |
 | scaleColor | UIColor | `UIColor.lightGray` | Color used to tint the scale. |
+
+## License
+This project was released under the [MIT](https://github.com/HelenaL/CurvedBezierSlider/blob/main/LICENSE) license.
 
