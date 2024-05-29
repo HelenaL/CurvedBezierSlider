@@ -11,17 +11,19 @@ UI control of the custom slider view with a curved path.
 # Project Details
 Being inherited from `UIControl`, CurvedBezierSlider provides the behavior of default UIKit interface components, but at the same time, it has a sophisticated curved design based on `UIBezierPath`.
 
+## Usage
+
 ### Slider properties
 
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
 | value | Double | `0.0` | Current value of a slider. This value will be pinned to min/max. |
-| minimumValue | Double | `0.0` | The minimum value of the slider. The current value may change if outside the new min value. |
-| maximumValue | Double | `1.0` | The maximum value of the slider. The current value may change if outside the new max value. |
+| minimumValue | Double | `0.0` | The minimum value of the slider. The current value may change if outside the new minimum value. |
+| maximumValue | Double | `1.0` | The maximum value of the slider. The current value may change if outside the new maximum value. |
 | isFlipped | Bool | `false` | A Boolean value that determines whether the view is flipped. Set the direction of the curve - up or down. |
 | strokeMaxColor | UIColor | `UIColor.darkGray` | Color used to tint the maximum track of the slider path. |
 | strokeMinColor | UIColor | `UIColor.darkGray` | Color used to tint the minimum track of the slider path. |
-| pathAdapter | Int | 0 | Style of the slider path. There are three possible styles: 0 - semiCircle, 1 - almostCircle(~3/4), 2 - crescentCircle. |
+| pathAdapter | Int | 0 | Style of the slider path. There are three possible styles: 0 - semiCircle, 1 - almostCircle(~3/4), and 2 - crescentCircle. |
 
 ### Thumb properties
 | Name         | Type    | Default | Description |
@@ -34,3 +36,4 @@ Being inherited from `UIControl`, CurvedBezierSlider provides the behavior of de
 | ------------ | ------- | ------- | ----------- |
 | scaleIsHidden | Bool | `false` | A Boolean value that determines whether scale should be hidden. |
 | scaleColor | UIColor | `UIColor.lightGray` | Color used to tint the scale. |
+
