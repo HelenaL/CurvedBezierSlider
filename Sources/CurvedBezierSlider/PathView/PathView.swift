@@ -28,6 +28,7 @@ class PathView: UIView {
     /// The slider’s current value. This value will be pinned to min/max.
     public var value: Double = 0.0 {
         didSet {
+            setInitialThumpPosition(value: value)
             self.setNeedsDisplay()
         }
     }
